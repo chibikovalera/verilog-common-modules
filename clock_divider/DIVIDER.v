@@ -5,8 +5,8 @@ Description: This module generates a clock enable pulse (CEO) every DIV_VAL cloc
              It's useful for creating slower clock domains or periodic triggers from a fast main clock.
 
 @parameter DIV_VAL: Division value. Output pulse period = (DIV_VAL) * CLK_period.
-@note:          The CEO pulse is active high for exactly one clock cycle.
-@note:          Asynchronous reset (RST) sets the counter to zero and deasserts CEO.
+@note: The CEO pulse is active high for exactly one clock cycle.
+@note: Asynchronous reset (RST) sets the counter to zero and deasserts CEO.
 
 */
 
