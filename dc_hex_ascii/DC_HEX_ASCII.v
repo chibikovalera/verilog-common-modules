@@ -38,6 +38,8 @@ begin
         4'hD: ASCII = 8'h44;
         4'hE: ASCII = 8'h45;
         4'hF: ASCII = 8'h46;
+
+        default: ASCII = 8'hff;
     endcase
 end
 
