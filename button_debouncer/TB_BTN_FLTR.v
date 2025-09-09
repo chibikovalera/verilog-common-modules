@@ -77,7 +77,7 @@ end
 wire btn_out;
 wire btn_ceo;
 
-CV_BTN_FLTR fltr1
+BTN_FLTR fltr1
 (
     .BTN_IN(btn),
     .RST(RST),
