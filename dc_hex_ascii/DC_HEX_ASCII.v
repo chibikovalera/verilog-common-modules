@@ -12,9 +12,8 @@ Description: Converts 4-bit hexadecimal values to their corresponding ASCII char
 
 module DC_HEX_ASCII
 (
-    input [3:0] HEX,
-    
-    output reg [7:0] ASCII
+    input [3:0] HEX, // 4-bit hexadecimal input (0x0-0xF)
+    output reg [7:0] ASCII // ASCII character output
 );
 
 always@(*)
