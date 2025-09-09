@@ -48,10 +48,6 @@ initial begin
     #10 HEX = 4'hE; // E
     #10 HEX = 4'hF; // F
        
-    // Test boundary and edge cases
-    #10 HEX = 4'b0000; // Minimum value
-    #10 HEX = 4'b1111; // Maximum value
-        
     // Test some undefined states 
     #10 HEX = 4'bxxxx; // Unknown values
     #10 HEX = 4'bzzzz; // High impedance
