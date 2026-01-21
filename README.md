@@ -1,2 +1,21 @@
-# verilog-common-modules
-A collection of well-documented, synthesizable Verilog modules commonly used in digital design (e.g., clock dividers, debouncers, synchronizers). Each module comes with a testbench and simulation results.
+Набор синтезируемых модулей Verilog, обычно используемых в цифровом проектировании (например, делители тактовых импульсов, дешифраторы, синхронизаторы). К каждому модулю прилагается тестовый файл и результаты моделирования.
+
+button_debouncer - Фильтр дребезга контактов
+
+clock_divider - Параметризируемый делитель частоты
+
+counter - Параметризируемый счетчик
+
+dc_ascii_hex - Дешифратор из ASCII в HEX
+
+dc_hex_ascii - Дешифратор из HEX в ASCII
+
+decoder - Параметризируемый дешифратор
+
+led_controller - Контроллер LED
+
+multiplexer - Мультиплексор 2_1
+
+synchronizer - Трехступенчатый синхронизатор
+
+uart - Параметризируемый контроллер UART
