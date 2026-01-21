@@ -17,7 +17,7 @@ module SYNCH
   	input CLK,  
   	input RST,
 	
-	  output SYNC_OUT // Synchronized output signal
+	output SYNC_OUT // Synchronized output signal
 );
 
 // Internal synchronization registers (3-stage shift register)
