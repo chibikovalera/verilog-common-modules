@@ -58,11 +58,11 @@ synchronizer sync
 );
 
 wire [1:0] count;
-counter # (.step(1), .cnt_module(4))cnt
+counter # (.step(1), .cnt_module(4)) cnt
 (
-    .C(clk),
-    .RE(synch_out ~^ out_signal),
-    .CE(1'b1),
-    .Q(count)
+    .clk(clk),                      
+    .reset(synch_out ~^ out_signal),  
+    .reverse(1'b0),                 
+    .cnt(count)                   
 );
 endmodule
