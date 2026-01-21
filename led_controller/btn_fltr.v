@@ -19,10 +19,10 @@ synchronizer synch1
 
 counter #(.step(1), .cnt_module(4)) cnt1
 (
-    .C(clk),
-    .RE(synch_out ~^ OUT_SIGNAL),
-    .CE(CLOCK_ENABLE),
-    .Q(cnt_out)
+    .clk(clk),
+    .reset(synch_out ~^ OUT_SIGNAL),
+    .reverse(1'b0), // Добавлен порт reverse
+    .cnt(cnt_out)   // Изменено с Q на cnt
 );
 
 always@(posedge clk)
@@ -31,4 +31,5 @@ begin
         OUT_SIGNAL <= synch_out;
     OUT_SIGNAL_ENABLE <= (cnt_out[0] & cnt_out[1] & CLOCK_ENABLE & synch_out);
 end
+
 endmodule
