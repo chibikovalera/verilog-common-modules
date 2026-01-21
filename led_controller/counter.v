@@ -3,8 +3,8 @@
 module counter # (parameter step = 1, cnt_module = 2)
 (
     input wire clk,
-          wire reset,
-          wire reverse,
+    input wire reset,
+    input wire reverse,
     output reg [($clog2(cnt_module) - 1) : 0] cnt    
 );
 
@@ -20,4 +20,3 @@ begin
         endcase
 end
 endmodule
-
